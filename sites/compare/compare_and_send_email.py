@@ -13,7 +13,7 @@ from time import gmtime, strftime
 now = strftime("%Y-%m-%d_%H.%M.%S", gmtime())
 
 GMAILUSER = 'rasteberryan.pits@gmail.com'
-GMAILPWD = 'password'
+GMAILPWD = 'Jiswwp!.@2802'
 EMAILSENDER = 'rasteberryan.pits@gmail.com'
 EMAILRECIPIENT = sys.argv[1]
 
@@ -21,7 +21,7 @@ EMAILRECIPIENT = sys.argv[1]
 root_dir = "/home/pi/flask/donationbox-server/sites/compare/"
 
 # Remove old diff files
-cmd = "rm -rf diff.jpg result.pdf"
+cmd = "rm -f " + root_dir + "diff.jpg " + root_dir + "result.pdf"
 os.system(cmd)
 
 # Erstellung des 'diff' Bildes

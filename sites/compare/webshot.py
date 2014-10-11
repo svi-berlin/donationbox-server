@@ -5,7 +5,7 @@ import sys
 
 domain = str(sys.argv[1])
 name = str(sys.argv[2])
-image = "/home/pi/flask/sites/compare/" + str(name) + ".jpg"
+image = "/home/pi/flask/donationbox-server/sites/compare/" + str(name) + ".jpg"
 
 cmd = "rm -f " + image
 os.system(cmd)
