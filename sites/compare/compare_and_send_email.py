@@ -12,13 +12,13 @@ from time import gmtime, strftime
 
 now = strftime("%Y-%m-%d_%H.%M.%S", gmtime())
 
-GMAILUSER = 'emailsmtplogin@gmail.com'
+GMAILUSER = 'rasteberryan.pits@gmail.com'
 GMAILPWD = 'password'
-EMAILSENDER = 'emailfrom@gmail.com'
+EMAILSENDER = 'rasteberryan.pits@gmail.com'
 EMAILRECIPIENT = sys.argv[1]
 
 # Root Directory
-root_dir = "/home/pi/flask/sites/compare/"
+root_dir = "/home/pi/flask/donationbox-server/sites/compare/"
 
 # Remove old diff files
 cmd = "rm -rf diff.jpg result.pdf"
@@ -35,9 +35,9 @@ time.sleep(3)
  
 # Create a text/plain message
 msg = email.mime.Multipart.MIMEMultipart()
-msg['Subject'] = 'raspberry webcam snapshot'
-msg['From'] = 'rasteberryan.pits@gmail.com'
-msg['To'] = 'stephan.vits@gmail.com'
+msg['Subject'] = 'raspberry webshot'
+msg['From'] = EMAILSENDER
+msg['To'] = EMAILRECIPIENT
  
 # The main body is just another attachment
 body = email.mime.Text.MIMEText("""Hi, hier ein neues DIFF PDF!""")

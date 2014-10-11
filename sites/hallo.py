@@ -43,14 +43,14 @@ def form_compare():
         return render_template('form_compare_submit.html')
 
 def take_webshot(url, name):
-    cmd = ["python","/home/pi/flask/sites/compare/webshot.py",url,name]
+    cmd = ["python","/home/pi/flask/donationbox-server/sites/compare/webshot.py",url,name]
     p = subprocess.Popen(cmd, stdout = subprocess.PIPE,
                             stderr=subprocess.PIPE,
                             stdin=subprocess.PIPE)
     out,err = p.communicate()
 
 def send_email(email):
-    cmd = ["python","/home/pi/flask/sites/compare/compare_and_send_email.py",email]
+    cmd = ["python","/home/pi/flask/donationbox-server/sites/compare/compare_and_send_email.py",email]
     p = subprocess.Popen(cmd, stdout = subprocess.PIPE,
                             stderr=subprocess.PIPE,
                             stdin=subprocess.PIPE)
