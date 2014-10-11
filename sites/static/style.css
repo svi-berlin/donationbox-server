@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: fantasy;
+  background-color:black;
+}
+
+a {
+font-size:10px;
+color:#000;
+text-decoration:none;
+}
+
+.code {
+display:none;
+}
+
+.system_info {
+position: fixed;
+top: 300px;
+right: 30px;
+width: 200px;
+color: #999;
+text-align: center;
+ }
+  .system_info h1 {
+    margin: 0 0 10px 0; }
+  .system_info img {
+    width: 100%;
+    margin-bottom: 10px; }
+  .system_info a {
+position: relative;
+width:100px;
+height:100px;
+display: inline-block;
+margin: 0;
+background: url('spider.png') 0 0  no-repeat;   
+}
+
+.info, .controls {
+  position: fixed;
+  top: 60px;
+  left: 40px;
+  width: 200px;
+  padding: 1em; }
+
+.info {
+  background-color: #eee; }
+
+.controls a {
+ background: sienna;
+padding: 10px;
+border-radius: 3px;}
+
+header {
+  font-size: 14px;
+  padding-bottom: 2px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+  overflow: auto; }
+  header p {
+    padding: 0;
+    margin: 0; }
+    header p.date {
+      float: left; }
+    header p.timestamp {
+      float: right; }
+
+.content {
+  /*  -webkit-font-smoothing: none;*/
+  width: 384px;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: white;
+  font-size: 10px; }
+  .content .explanation h1 {
+    font-size: 52px;
+    margin: 10px 0; }
+  .content .explanation h2 {
+    margin: 10px 0; }
+  .content .explanation p, .content .explanation ul {
+    font-size: 18px;
+    font-weight: normal; }
+  .content .explanation pre {
+    font-size: 16px;
+    word-wrap: break-word; }
+
+
+form input,
+form select {
+border: 0;
+background: #000;
+padding: 10px 20px;
+border-radius: 3px;
+color: #fff;
+margin-top: 20px;
+
+}
+
+form input[type="submit"] {
+cursor:pointer;
+}
+
+.paper {
+  min-height: 300px;
+  background-color: white;
+  width: 440px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  margin: 30px auto;
+  box-shadow: 10px 10px 5px rgba(40, 40, 40, 0.5); }
+
+.loading {
+  text-align: center;
+  font-size: 32px; }
+  .loading .refresh {
+    margin: 2em 0 0 0;
+    font-size: 16px; }
+
+.paper.scrollprinter {
+  margin-top: 10em;
+  margin-bottom: 10em; }
+
+.printerfront, .printerback {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 200px; }
+  .printerfront .drawing, .printerback .drawing {
+    width: 600px;
+    margin: 0 auto; }
+    .printerfront .drawing canvas, .printerback .drawing canvas {
+      width: 600px; }
+
+.printerback {
+  z-index: -1; }
+
+.printerfront {
+  z-index: 1000; }
+
+.test_page .print_url {
+  font-size: 14px; }
+
+.my_printer .print_url {
+  font-size: 12px; }
+.my_printer label, .my_printer input, .my_printer textarea {
+  display: block;
+  font-weight: normal;
+  font-size: 14px; }
+.my_printer input[type=text], .my_printer textarea {
+  width: 97%; }
+.my_printer textarea {
+  height: 100px; }
+
+.archive .print {
+  margin-bottom: 3em; }
+  .archive .print:last-child {
+    margin-bottom: 0; }
+  .archive .print .metadata {
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #ccc;
+    margin-bottom: 0.5em; }
+    .archive .print .metadata p {
+      margin: 0; }
+  .archive .print img {
+    border-top: 1px dashed #cccccc;
+    border-bottom: 1px dashed #cccccc; }
+
+
+
